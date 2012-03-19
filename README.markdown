@@ -16,14 +16,17 @@ In Rails 3, add this to your Gemfile and run the bundle command.
     'my cool string'.urlize # => my-cool-string
     :foo_symbol.to_s.urlize # => foo-symbol
 
-    Examples:
-    | string                                 | url                        |
-    | Lorem ipsum dolor sit amet             | lorem-ipsum-dolor-sit-amet |
-    | CamelCase                              | camel-case                 |
-    | a   lot   of   spaces                  | a-lot-of-spaces            |
-    | special !@#$%^&*()<>,./?\ \|  symbols  | special-symbols            |
-    | underscored_string                     | underscored-string         |
-    | string with-dashes                     | string-with-dashes         |
+Examples:
+
+<table>
+  <tr><th>string</th><th>url</th></tr>
+  <tr><td>Lorem ipsum dolor sit amet</td><td>lorem-ipsum-dolor-sit-amet</td></tr>
+  <tr><td>CamelCase</td><td>camel-case</td></tr>
+  <tr><td>a   lot   of   spaces</td><td>a-lot-of-spaces</td></tr>
+  <tr><td>special !@#$%^&*()<>,./?\ \|  symbols</td><td>special-symbols</td></tr>
+  <tr><td>underscored_string</td><td>underscored-string</td></tr>
+  <tr><td>string with-dashes</td><td>string-with-dashes</td></tr>
+</table>
 
 # Replace accents
 
