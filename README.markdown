@@ -33,12 +33,12 @@ Examples:
 
 ## Transliteration
 
-Transliteration uses with I18n library and enabled by default. You could provide local:
+Transliteration powered by I18n library and enabled by default. So you could provide locale to the urlize method:
 
     'Jürgen'.urlize                 # => "jurgen"
     'Jürgen'.urlize(:locale => :de) # => "juergen"
 
-or disable transliteration:
+or disable transliteration at all:
 
     'Jürgen'.urlize(:transliterate => false) # => 'jürgen'
 
