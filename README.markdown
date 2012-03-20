@@ -2,6 +2,7 @@
 
 Extends ruby ```String``` class with ```urlize``` method which converts string to friendly url.
 It removes all characters that couldn't be used in url and replaces spaces/underscores with dashes.
+In addition it transliterate string using I18n library.
 
 ## Installation
 
@@ -26,13 +27,6 @@ Examples:
   <tr><td>special !@#$%^&*()<>,./?\ \|  symbols</td><td>special-symbols</td></tr>
   <tr><td>underscored_string</td><td>underscored-string</td></tr>
   <tr><td>string with-dashes</td><td>string-with-dashes</td></tr>
+  <tr><td>ÈÉÊË</td><td>eeee</td></tr>
+  <tr><td>òóôõöø</td><td>oooooo</td></tr>
 </table>
-
-# Replace accents
-
-There is special feature to replace string accents to base letter.
-
-    'àáâ'.urlize # => àáâ
-    'àáâ'.urlize(:replace_accents => true) # => aaa
-
-see ```features/urlize.feature``` for the all list of accents.
