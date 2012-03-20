@@ -23,7 +23,7 @@ transliterate string using I18n library.}
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = %w(lib)
 
-  s.add_runtime_dependency 'i18n', '~> 0.5.0'
+  s.add_runtime_dependency 'i18n', '~> 0.5'
   s.add_development_dependency "cucumber", '~> 1.1.9'
   s.add_development_dependency "rspec", '~> 2.9'
 end

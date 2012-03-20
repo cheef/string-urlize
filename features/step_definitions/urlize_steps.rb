@@ -9,3 +9,7 @@ end
 Then /^It should looks like "([^"]*)"$/ do |urlized_url|
   @result.should == urlized_url
 end
+
+When /^I urlize it with disabled transliteration$/ do
+  @result = @string.urlize(:transliterate => false)
+end

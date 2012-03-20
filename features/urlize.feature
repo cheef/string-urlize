@@ -40,3 +40,8 @@
     | ýÿ      | yy       |
     | Ĳ       | ij       |
     | Ś       | s        |
+
+  Scenario: disable transliteration
+    Given a string "Jürgen"
+    When I urlize it with disabled transliteration
+    Then It should looks like "jürgen"

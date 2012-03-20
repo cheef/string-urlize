@@ -30,3 +30,15 @@ Examples:
   <tr><td>ÈÉÊË</td><td>eeee</td></tr>
   <tr><td>òóôõöø</td><td>oooooo</td></tr>
 </table>
+
+## Transliteration
+
+Transliteration uses with I18n library and enabled by default. You could provide local:
+
+    'Jürgen'.urlize                 # => "jurgen"
+    'Jürgen'.urlize(:locale => :de) # => "juergen"
+
+or disable transliteration:
+
+    'Jürgen'.urlize(:transliterate => false) # => 'jürgen'
+
