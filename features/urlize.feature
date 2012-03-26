@@ -1,4 +1,4 @@
-  Feature: converts string to friendly url
+Feature: converts string to friendly url
 
   Scenario Outline: use urlize method on different strings and make sure that all made url are friendly
     Given a string "<string>"
@@ -44,4 +44,5 @@
   Scenario: disable transliteration
     Given a string "Jürgen"
     When I urlize it with disabled transliteration
-    Then It should looks like "jürgen"
+    Then It should looks like "jrgen" in ruby "1.8.7"
+    And It should looks like "jürgen" in ruby "1.9"

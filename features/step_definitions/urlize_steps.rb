@@ -13,3 +13,10 @@ end
 When /^I urlize it with disabled transliteration$/ do
   @result = @string.urlize(:transliterate => false)
 end
+
+Then /^It should looks like "([^"]*)" in ruby "([^"]*)"$/ do |string, ruby_version|
+  if RUBY_VERSION =~ /#{ruby_version}/
+    @result.should == string
+  end
+end
+

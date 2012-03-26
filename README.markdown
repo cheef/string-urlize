@@ -40,5 +40,5 @@ Transliteration powered by I18n library and enabled by default. So you could pro
 
 or disable transliteration at all:
 
-    'Jürgen'.urlize(:transliterate => false) # => 'jürgen'
+    'Jürgen'.urlize(:transliterate => false) # => 'jürgen' in ruby 1.9 and 'jrden' in ruby 1.8.7
 
