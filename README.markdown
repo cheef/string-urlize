@@ -1,4 +1,4 @@
-# String Urlize
+# String Urlize [![Build Status](https://secure.travis-ci.org/cheef/string-urlize.png "Build Status")](http://travis-ci.org/cheef/string-urlize) [![Dependency Status](https://gemnasium.com/cheef/string-urlize.png "Dependency Status")](https://gemnasium.com/cheef/string-urlize)
 
 Extends ruby ```String``` class with ```urlize``` method which converts string to friendly url.
 It removes all characters that couldn't be used in url and replaces spaces/underscores with dashes.
